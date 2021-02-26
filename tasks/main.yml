@@ -1,0 +1,9 @@
+---
+
+- name: install NanoStat via conda
+  conda_install:
+    name: "nanostat"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "nanostat_{{ env_name }}"
